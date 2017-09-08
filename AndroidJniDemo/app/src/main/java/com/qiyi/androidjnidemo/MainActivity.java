@@ -1,5 +1,6 @@
 package com.qiyi.androidjnidemo;
 
+import android.graphics.SurfaceTexture;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -57,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void functionString(String str){
         Log.d(TAG," java client call functionString str :"+str);
+    }
+
+    {
+
     }
 
     /**

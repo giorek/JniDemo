@@ -118,6 +118,11 @@ Java_com_qiyi_androidjnidemo_MainActivity_callJniGetJavaInrAry(JNIEnv *env, jobj
     env->ReleaseIntArrayElements(obj_java_int_array, int_array, 0);
 }
 
+/**
+ * 从java层传递int[]到jni层
+ * 1，使用env->GetIntArrayElements(passdinAry,isCopy)从传递的数组中获取其中的元素并保存，此处保存的是指针
+ * 2，利用上面的指针
+ */
 extern "C"
 JNIEXPORT void JNICALL
 Java_com_qiyi_androidjnidemo_MainActivity_callJniArgIntAry(JNIEnv *env, jobject instance,
